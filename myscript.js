@@ -13,5 +13,7 @@ function getComputerChoice(){
                 break;
         }
 
-    return choice
+    return computerChoice
 }
+
+
