@@ -16,4 +16,13 @@ function getComputerChoice(){
     return computerChoice
 }
 
+function getHumanChoice(){
+    let humanChoice = prompt("[Rock] [Paper] or [Scissors]: ").toUpperCase();
+    
+    while (humanChoice !== "ROCK" && humanChoice !== "PAPER" && humanChoice !== "SCISSORS"){
+        humanChoice = prompt("None of the choices picked try again Rock] [Paper] or [Scissors]").toUpperCase();
+    }
 
+
+    return humanChoice    
+}
