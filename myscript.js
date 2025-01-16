@@ -1,15 +1,15 @@
 function getComputerChoice(){
     const randomNum = Math.round(Math.random() * 2) + 1;
-    let choice = "";
+    let computerChoice = "";
         switch(randomNum){
             case 1:
-                choice = "Rock";
+                computerChoice = "Rock";
                 break;
             case 2:
-                choice = "Paper";
+                computerChoice = "Paper";
                 break;
             case 3:
-                choice = "Scissors";
+                computerChoice = "Scissors";
                 break;
         }
 
