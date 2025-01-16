@@ -1,8 +1,6 @@
 function getComputerChoice(){
-    const randomNum = "";
+    const randomNum = Math.round(Math.random() * 2) + 1;
     const choice = "";
 
-    return Math.round(Math.random(randomNum))
+    return randomNum
 }
-
-console.log(getComputerChoice())
