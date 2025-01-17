@@ -75,11 +75,7 @@ function playRound(humanChoice, computerChoice){
         console.log("Computer Score " + computerScore)
     } else {
         alert("Error")
-    }
- 
-
-
-    
+    }    
 }
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
