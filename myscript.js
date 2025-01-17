@@ -3,13 +3,13 @@ function getComputerChoice(){
     let computerChoice = "";
         switch(randomNum){
             case 1:
-                computerChoice = "Rock";
+                computerChoice = "ROCK";
                 break;
             case 2:
-                computerChoice = "Paper";
+                computerChoice = "PAPER";
                 break;
             case 3:
-                computerChoice = "Scissors";
+                computerChoice = "SCISSORS";
                 break;
         }
 
@@ -20,7 +20,7 @@ function getHumanChoice(){
     let humanChoice = prompt("[Rock] [Paper] or [Scissors]: ").toUpperCase();
     
     while (humanChoice !== "ROCK" && humanChoice !== "PAPER" && humanChoice !== "SCISSORS"){
-        humanChoice = prompt("None of the choices picked try again Rock] [Paper] or [Scissors]").toUpperCase();
+        humanChoice = prompt("Not one of of the choices, try again Rock] [Paper] or [Scissors]").toUpperCase();
     }
 
 
