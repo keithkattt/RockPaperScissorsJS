@@ -20,7 +20,7 @@ function getHumanChoice(gameRound){
     let humanChoice = prompt("[Rock] [Paper] or [Scissors]: ").toUpperCase();
     
     while (humanChoice !== "ROCK" && humanChoice !== "PAPER" && humanChoice !== "SCISSORS"){
-        humanChoice = prompt("Not one of of the choices, try again Rock] [Paper] or [Scissors]").toUpperCase();
+        humanChoice = prompt("Not one of of the choices, try again [Rock] [Paper] or [Scissors]").toUpperCase();
                 }
 
 
@@ -31,9 +31,9 @@ function playGame(){
     
     let humanScore = 0; 
     let computerScore = 0;
-    let gameRound = 0;   
+    let gameRound = 1;   
 //Every Game Round a new human choice and Computer must be created
-    while (humanScore != 5 && computerScore != 5){
+    while (gameRound <= 5){
         console.log("Round: " + gameRound)
         let humanSelection = getHumanChoice(gameRound);
         let computerSelection = getComputerChoice(gameRound);  
@@ -41,11 +41,14 @@ function playGame(){
         ++gameRound
     }
 
-    if (humanScore === 5){
-        console.log("YOU WIN!!!! ");
+    if (humanScore > computerScore){
+        console.log("YOU WIN!!!!");
         alert("Game Over");
-    } else if (computerScore === 5){
-        console.log("YOU LOSE!!!");
+    } else if (humanScore === computerScore){
+        console.log("It's a Tie");
+        alert("Game Over");
+    } else {
+        console.log("You Lose!!!");
         alert("Game Over");
     }
 
