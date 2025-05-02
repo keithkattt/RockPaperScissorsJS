@@ -33,7 +33,7 @@ function playGame(){
     let computerScore = 0;
     let gameRound = 1;   
 //Every Game Round a new human choice and Computer must be created
-    while (gameRound <= 5){
+    while (gameRound <= 100){
         console.log("Round: " + gameRound)
         let humanSelection = getHumanChoice(gameRound);
         let computerSelection = getComputerChoice(gameRound);  
@@ -106,4 +106,4 @@ function playGame(){
 
 }
 
-playGame();
+// playGame();
