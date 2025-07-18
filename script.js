@@ -63,9 +63,9 @@ scissorsButton.addEventListener("click", () => {
             ++gameRound
 });
 
-
-
 function playRound(humanChoice, computerChoice){
+   const announce = getElementById("announcementBoard")
+   
     if (humanChoice === "ROCK" && computerChoice == "ROCK" ){
             console.log("Both Rock, It's a tie!");
             console.log("Your Score: " + humanScore);
