@@ -1,24 +1,23 @@
 function getComputerChoice(gameRound){
+    
     const randomNum = Math.round(Math.random() * 2) + 1;
-    let computerChoice = "";
-        switch(randomNum){
-            case 1:
-                computerChoice = "ROCK";
-                break;
-            case 2:
-                computerChoice = "PAPER";
-                break;
-            case 3:
-                computerChoice = "SCISSORS";
-                break;
+        let computerChoice = "";
+            switch(randomNum){
+                case 1:
+                    computerChoice = "ROCK";
+                    break;
+                case 2:
+                    computerChoice = "PAPER";
+                    break;
+                case 3:
+                    computerChoice = "SCISSORS";
+                    break;
         }
    
     return computerChoice
-    }
+}
 
 function playGame(){ 
-
-    
 
     if (humanScore > computerScore){
         console.log("YOU WIN!!!!");
@@ -43,25 +42,25 @@ let gameRound = 1;
 rockButton.addEventListener("click", () => {
     let humanSelection = "ROCK";
     let computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection); // Call playRound with the choices
-    console.log("Round: " + gameRound)
-    ++gameRound
+        playRound(humanSelection, computerSelection); // Call playRound with the choices
+            console.log("Round: " + gameRound)
+            ++gameRound
 });
 
 paperButton.addEventListener("click", () => {
     let humanSelection = "PAPER";
     let computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection); // Call playRound with the choices
-    console.log("Round: " + gameRound)
-    ++gameRound
+        playRound(humanSelection, computerSelection); // Call playRound with the choices
+            console.log("Round: " + gameRound)
+            ++gameRound
 });
 
 scissorsButton.addEventListener("click", () => {
     let humanSelection = "SCISSORS";
     let computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-    console.log("Round: " + gameRound)
-    ++gameRound
+        playRound(humanSelection, computerSelection);
+            console.log("Round: " + gameRound)
+            ++gameRound
 });
 
 
